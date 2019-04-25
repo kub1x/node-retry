@@ -1,3 +1,5 @@
+dependencies:
+  debug: 4.1.1
 devDependencies:
   fake: 0.2.2
   nyc: 14.0.0
@@ -238,7 +240,6 @@ packages:
   /debug/4.1.1:
     dependencies:
       ms: 2.1.1
-    dev: true
     resolution:
       integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
   /decamelize/1.2.0:
@@ -725,7 +726,6 @@ packages:
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   /ms/2.1.1:
-    dev: true
     resolution:
       integrity: sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
   /neo-async/2.6.0:
@@ -1328,6 +1328,7 @@ packages:
     resolution:
       integrity: sha512-WyEoxgyTD3w5XRpAQNYUB9ycVH/PQrToaTXdYXRdOXvEy1l19br+VJsc0vcO8PTGg5ro/l/GY7F/JMEBmI0BxA==
 specifiers:
+  debug: ^4.1.1
   fake: ^0.2.2
   nyc: ^14.0.0
   tape: ^4.8.0
