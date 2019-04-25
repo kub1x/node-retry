@@ -16,14 +16,13 @@
   "engines": {
     "node": ">= 4"
   },
-  "dependencies": {},
   "devDependencies": {
-    "fake": "0.2.0",
-    "istanbul": "^0.4.5",
+    "fake": "^0.2.2",
+    "nyc": "^14.0.0",
     "tape": "^4.8.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/tape/bin/tape ./test/integration/*.js",
+    "test": "nyc --reporter=lcov --reporter=text-summary tape ./test/integration/*.js",
     "release:major": "env SEMANTIC=major npm run release",
     "release:minor": "env SEMANTIC=minor npm run release",
     "release:patch": "env SEMANTIC=patch npm run release",
